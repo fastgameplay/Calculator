@@ -11,7 +11,7 @@
     <string name="seven">7</string>
     <string name="eight">8</string>
     <string name="nine">9</string>
-    <!-- Side buttons -->
+    <!-- main operation buttons -->
     <string name="point">,</string>
     <string name="equal">=</string>
     <string name="plus">+</string>
@@ -19,10 +19,9 @@
     <string name="multiply">*</string>
     <string name="divide">÷</string>
     <string name="percent">%</string>
-    <string name="brackets">( )</string>
-    <string name="delete">C</string>
-    <string name="deleted">AC</string>
-
+    <string name="OpenBr">(</string>
+    <string name="CloseBr">)</string>
+    <!-- symbolos -->
     <string name="backspace"> $ </string>
     <string name="more"> $ </string>
 
