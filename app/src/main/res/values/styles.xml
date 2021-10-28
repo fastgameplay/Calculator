@@ -36,6 +36,7 @@
         <item name = "android:textSize" >25sp</item>
         <item name="android:layout_weight">1</item>
         <item name="materialButtonStyle">@style/Widget.MaterialComponents.Button</item>
+
         <!-- need to move out of here ONLY FOR TESTS! -->
         <item name = "android:backgroundTint">#FFC107</item>
         <item name = "android:textColor">@color/white</item>

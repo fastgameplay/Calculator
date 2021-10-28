@@ -7,10 +7,12 @@
 
     <LinearLayout
         android:id="@+id/linearLayout3"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginBottom="16dp"
         android:orientation="vertical"
+        android:gravity="bottom"
+        android:background="#E6E6E6"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -18,46 +20,55 @@
         app:layout_constraintVertical_weight="1">
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/textLast"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.1"
+            android:gravity="end"
+            android:padding="8dp"
+            android:text=""
+            android:autoSizeTextType="uniform" />
+
+        <TextView
+            android:id="@+id/textThird"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.07"
+            android:gravity="end"
+            android:padding="8dp"
+            android:text=""
+            android:autoSizeTextType="uniform" />
+
+        <TextView
+            android:id="@+id/textSec"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.05"
+            android:gravity="end"
+            android:padding="8dp"
+            android:text=""
+            android:autoSizeTextType="uniform" />
+
+        <TextView
+            android:id="@+id/textMain"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="TextView" />
+            android:gravity="end"
+            android:autoSizeTextType="uniform"
+            android:padding="8dp"
+            android:text="9+10"
+            android:textColor="@color/black" />
 
         <TextView
-            android:id="@+id/textView6"
+            android:id="@+id/textResult"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="TextView" />
-
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="TextView" />
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="TextView" />
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="TextView" />
-
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="0.8"
-            android:text="TextView" />
+            android:layout_weight="1.05"
+            android:gravity="end"
+            android:padding="8dp"
+            android:text="=21"
+            android:autoSizeTextType="uniform" />
     </LinearLayout>
 
     <LinearLayout
@@ -84,7 +95,7 @@
                 style="@style/OpButton"
                 android:text="@string/backspace"
                 app:cornerRadius="50dp"
-
+                android:backgroundTint="#ff2020"
                 />
 
             <Button
@@ -233,6 +244,7 @@
                 android:id="@+id/button4"
                 style="@style/OpButton"
                 android:text="@string/equal"
+                android:backgroundTint="#FF9800"
                 app:cornerRadius="50dp" />
         </LinearLayout>
     </LinearLayout>
