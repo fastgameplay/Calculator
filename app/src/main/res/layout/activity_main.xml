@@ -223,25 +223,25 @@
             app:layout_constraintBottom_toTopOf="@+id/linearLayout2">
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/btn_more"
                 style="@style/OpButton"
                 android:text="@string/more"
                 app:cornerRadius="50dp" />
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/btn_zero"
                 style="@style/NumButton"
                 android:text="@string/zero"
                 app:cornerRadius="50dp" />
 
             <Button
-                android:id="@+id/button3"
+                android:id="@+id/btn_dot"
                 style="@style/OpButton"
                 android:text="@string/point"
                 app:cornerRadius="50dp" />
 
             <Button
-                android:id="@+id/button4"
+                android:id="@+id/btn_equal"
                 style="@style/OpButton"
                 android:text="@string/equal"
                 android:backgroundTint="#FF9800"
