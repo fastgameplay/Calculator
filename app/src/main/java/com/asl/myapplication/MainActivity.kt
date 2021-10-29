@@ -7,6 +7,7 @@ import com.asl.myapplication.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private val listOfDots: DotController = DotController()
+    private val postFx: PostFx = PostFx
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -65,6 +66,9 @@ class MainActivity : AppCompatActivity() {
         binding.btnClosebr.setOnClickListener {
             binding.textMain.text = AddInput(")")
         }
+        binding.btnMore.setOnClickListener {
+            ToPostFx()
+        }
         binding.btnPlus.setOnClickListener {
             if (IsLastCharOperator(binding.textMain.text as String)) ClearLast(binding.textMain.text as String)
             binding.textMain.text = AddInput("+")
@@ -102,7 +106,13 @@ class MainActivity : AppCompatActivity() {
     return text.endsWith("+") || text.endsWith("-") || text.endsWith("×") || text.endsWith("÷")
     }
     private fun AddInput(buttonText: String) : String{
+
         return "${binding.textMain.text}$buttonText"
+    }
+
+    private fun ToPostFx(){
+        var str = postFx.ToPostFx(binding.textMain.text.toString())
+        binding.textResult.text = str.toString()
     }
     private fun ClearLast(text : String){
         binding.textMain.text = text.dropLast(1)

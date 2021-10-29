@@ -2,7 +2,11 @@ package com.asl.myapplication
 
 class Token {
 
-    fun PreTokens(inputString: String): List<String> {
+
+
+
+
+    fun ToTokens(inputString: String): List<String> {
         val tokens: MutableList<String> = ArrayList()
 
         tokens.add(Character.toString(inputString[0]))
@@ -23,3 +27,5 @@ class Token {
         return tokens
     }
 }
+
+
