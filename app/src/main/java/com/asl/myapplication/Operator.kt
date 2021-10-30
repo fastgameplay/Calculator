@@ -5,9 +5,9 @@ enum class Operator(val symbol: String, associativity: Associativity, precedence
     Comparable<Operator>{
     ADDITION("+", Associativity.LEFT, 0),
     SUBTRACTION("-", Associativity.RIGHT, 0),
-    DIVISION("/", Associativity.LEFT, 1),
-    MULTIPLICATION("*", Associativity.LEFT, 1),
-    POWER("^", Associativity.RIGHT, 2);
+    DIVISION("/", Associativity.LEFT, 5),
+    MULTIPLICATION("*", Associativity.LEFT, 5),
+    POWER("^", Associativity.RIGHT, 10);
 
     val associativity: Associativity
     val precedence: Int

@@ -3,11 +3,10 @@ package com.asl.myapplication
 internal object PostFx {
 
     val OPS: MutableMap<String, Operator> = HashMap()
-    val tkn: Token = Token()
     //Takes splitted infix notation and transforms it into Reverse Postfix Nonation
-    fun ToPostFx(_Input : String): List<String> {
+    fun ToPostFx(_Input : List<String>): List<String> {
 
-        val tokens: List<String> = tkn.ToTokens(_Input)
+        val tokens: List<String> = _Input
         val output: MutableList<String> = mutableListOf()
         val stack = Stack()
 
