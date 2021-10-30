@@ -1,5 +1,6 @@
 package com.asl.myapplication
 
+import android.content.pm.ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.asl.myapplication.databinding.ActivityMainBinding
@@ -14,6 +15,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         val view = binding.root
+        this.setRequestedOrientation(SCREEN_ORIENTATION_PORTRAIT)
         setContentView(view)
 
         clearAllText()
@@ -147,9 +149,7 @@ class MainActivity : AppCompatActivity() {
         try {
             val str: String = expression.calculate(binding.textMain.text.toString().replace('×','*').replace('÷','/'))
             binding.textResult.text = str
-            if (binding.textMain.text == "9+10") {
-                binding.textResult.text = "21"
-            }
+            //here was twenyone
         }
         catch (exception : Throwable){
             binding.textResult.text = ""
